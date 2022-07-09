@@ -9,12 +9,61 @@ jobs:
         uses: Soumeh/Auto-Versioning@main
       - name: Checkout Repo
         uses: actions/checkout@v2
-      - name: Build Packs
+      - name: Build Pack 1
         uses: Sorrowfall/Resource-Packager@main
         with:
-          filename: ClassicHurtSounds # Change this for a different Resource Pack name
+          filename: ClassicHurtSounds-1-19 # Change this for a different Resource Pack name
           items: | # Change these depending on what folders you're using
-            src
+            src-1-19
+      - name: Build Pack 2
+        uses: Sorrowfall/Resource-Packager@main
+        with:
+          filename: ClassicHurtSounds-1-18 # Change this for a different Resource Pack name
+          items: | # Change these depending on what folders you're using
+            src-1-18
+      - name: Build Pack 3
+        uses: Sorrowfall/Resource-Packager@main
+        with:
+          filename: ClassicHurtSounds-1-17 # Change this for a different Resource Pack name
+          items: | # Change these depending on what folders you're using
+            src-1-17
+      - name: Build Pack 4
+        uses: Sorrowfall/Resource-Packager@main
+        with:
+          filename: ClassicHurtSounds-1-16-2 # Change this for a different Resource Pack name
+          items: | # Change these depending on what folders you're using
+            src-1-16-2
+      - name: Build Pack 5
+        uses: Sorrowfall/Resource-Packager@main
+        with:
+          filename: ClassicHurtSounds-1-15 # Change this for a different Resource Pack name
+          items: | # Change these depending on what folders you're using
+            src-1-15
+      - name: Build Pack 6
+        uses: Sorrowfall/Resource-Packager@main
+        with:
+          filename: ClassicHurtSounds-1-13 # Change this for a different Resource Pack name
+          items: | # Change these depending on what folders you're using
+            src-1-13
+      - name: Build Pack 7
+        uses: Sorrowfall/Resource-Packager@main
+        with:
+          filename: ClassicHurtSounds-1-11 # Change this for a different Resource Pack name
+          items: | # Change these depending on what folders you're using
+            src-1-11
+      - name: Build Pack 8
+        uses: Sorrowfall/Resource-Packager@main
+        with:
+          filename: ClassicHurtSounds-1-9 # Change this for a different Resource Pack name
+          items: | # Change these depending on what folders you're using
+            src-1-9
+      - name: Build Pack 9
+        uses: Sorrowfall/Resource-Packager@main
+        with:
+          filename: ClassicHurtSounds-1-6-1 # Change this for a different Resource Pack name
+          items: | # Change these depending on what folders you're using
+            src-1-6-1
+
           gen-sha1: false
       - name: Create Release
         uses: meeDamian/github-release@2.0
@@ -25,4 +74,12 @@ jobs:
           body: "${{ steps.version.outputs.changelog }}"
           gzip: false
           files: > # Change these depending on the filename above
-            build/ClassicHurtSounds.zip 
+            build/ClassicHurtSounds-1-19.zip 
+            build/ClassicHurtSounds-1-18.zip 
+            build/ClassicHurtSounds-1-17.zip 
+            build/ClassicHurtSounds-1-16-2.zip 
+            build/ClassicHurtSounds-1-15.zip 
+            build/ClassicHurtSounds-1-13.zip 
+            build/ClassicHurtSounds-1-11.zip 
+            build/ClassicHurtSounds-1-9.zip 
+            build/ClassicHurtSounds-1-6-1.zip 
