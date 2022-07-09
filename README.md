@@ -12,4 +12,4 @@
 [Download for 1.6.1–1.8.9](https://github.com/ddomino007/classic-hurt-sounds-resourcepack/releases/download/latest/ClassicHurtSounds-1-6-1.zip)
 this resourcepack restores the classic damage/hurt noise from the Minecraft alphas.
 enjoy!
-![mcpack-default-image](https://raw.githubusercontent.com/ddomino007/classic-hurt-sounds-resourcepack/main/src/pack.png)
+![mcpack-default-image](https://raw.githubusercontent.com/ddomino007/classic-hurt-sounds-resourcepack/main/mcpack-default.png)
